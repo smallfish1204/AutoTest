@@ -1,0 +1,32 @@
+[
+  {
+    "description": "这是一个带有cookies信息的接口",
+    "request": {
+      "uri": "/get/cookies",
+      "method": "get"
+    },
+    "response": {
+      "json": {
+        "result": "获取cookies接口调用成功"
+      },
+      "cookies": {
+        "yupengcheng": "me"
+      }
+    }
+  },
+  {
+    "description": "这是一个必须给cookies才能调用的接口",
+    "request": {
+      "uri": "/with/cookies",
+      "method": "get",
+      "cookies": {
+        "yupengcheng": "me"
+      }
+    },
+    "response": {
+      "json": {
+        "result": "带有cookies的接口调用成功"
+      }
+    }
+  }
+]

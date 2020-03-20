@@ -1,0 +1,19 @@
+[
+  {
+    "description": "这是一个带参数的get请求",
+    "request": {
+      "uri": "/getwithparams",
+      "method": "get",
+      "queries": {
+        "name": "yupengcheng",
+        "age": "18"
+      }
+    },
+    "response": {
+      "text": "这是一个带参数的get请求示例",
+      "headers": {
+        "Content-Type": "charset=gbk"
+      }
+    }
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "description": "登录接口，成功返回cookies",
+    "request": {
+      "uri": "/v1/login",
+      "method": "post",
+      "json": {
+        "name": "zhangsan",
+        "password": "123456"
+      }
+    },
+    "response": {
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "resultCode": 1
+      }
+    }
+  },
+  {
+    "description": "登录接口，失败",
+    "request": {
+      "uri": "/v1/login",
+      "method": "post",
+      "json": {
+        "name": "zhangsan",
+        "password": "312126"
+      }
+    },
+    "response": {
+      "json": {
+        "resultCode": 0
+      }
+    }
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "description": "这是一个带cookies的get请求",
+    "request": {
+      "uri": "/get/with/params",
+      "method": "get",
+      "queries": {
+        "name": "yaolianchun",
+        "alias": "lover"
+      }
+    },
+    "response": {
+      "json": {
+        "result": "带有cookies和params的get请求调用成功"
+      },
+      "cookies": {
+        "login": "is"
+      }
+    }
+  },
+  {
+    "description": "这是一个带有cookies的post请求",
+    "request": {
+      "uri": "/post/with/params",
+      "method": "post",
+      "cookies": {
+        "login": "is"
+      },
+      "json": {
+        "name": "yupengcheng",
+        "lover": "yaolianchun",
+        "age": 18
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "resultCode": 1,
+        "status": "200"
+      }
+    }
+  }
+]

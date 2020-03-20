@@ -1,0 +1,28 @@
+[
+  {
+    "description": "这是一个重定向的URL",
+    "request": {
+      "uri": "/redirect"
+    },
+    "redirectTo": "http://www.baidu.com"
+  },
+  {
+    "description": "重定向到指定的接口",
+    "request": {
+      "uri": "/redirect/topath"
+    },
+    "redirectTo": "/newpath"
+  },
+  {
+    "description": "指定的接口",
+    "request": {
+      "uri": "/newpath"
+    },
+    "response": {
+      "json": {
+        "name": "yupengcheng",
+        "lover": "yaolianchun"
+      }
+    }
+  }
+]
